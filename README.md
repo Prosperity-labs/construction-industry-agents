@@ -4,31 +4,18 @@
 
 Transform Excel construction specifications into professional quotes in 30 minutes instead of 2-5 days.
 
-![System Overview](https://raw.githubusercontent.com/your-org/construction-industry-agents/main/docs/diagrams/simple-overview.svg)
+![System Overview](https://raw.githubusercontent.com/Prosperity-labs/diagrams/construction-industry-agents/main/docs/diagrams/simple-overview.svg)
 
 ## Value Proposition
 
-- **95% time reduction**: 2-5 days → 30 minutes
+- **95% time reduction**: 2-5 days -> 30 minutes
 - **100% accuracy**: Eliminates manual calculation errors  
 - **AI-powered**: Smart categorization with OpenAI GPT-4
 - **Cost-effective**: ~5 cents per project, 400x ROI
 - **Serbian optimized**: Native language and format support
 
-## 🏗️ System Architecture
 
-### Simple Workflow Overview
-![Workflow](https://raw.githubusercontent.com/your-org/construction-industry-agents/main/docs/diagrams/simple-overview.svg)
-
-### Complete System Architecture  
-![Architecture](https://raw.githubusercontent.com/your-org/construction-industry-agents/main/docs/diagrams/complete-architecture.svg)
-
-### Agent Data Flow
-![Data Flow](https://raw.githubusercontent.com/your-org/construction-industry-agents/main/docs/diagrams/agent-workflow.svg)
-
-### Industry Context
-![Industry Workflow](https://raw.githubusercontent.com/your-org/construction-industry-agents/main/docs/diagrams/construction-workflow.svg)
-
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone repository
@@ -46,6 +33,21 @@ export OPENAI_API_KEY="your-openai-api-key"
 # Run parser
 python excel_parser_agent.py your_project.xlsx
 ```
+
+
+## System Architecture
+
+### Simple Workflow Overview
+![Workflow](https://raw.githubusercontent.com/Prosperity-labs/construction-industry-agents/main/diagrams/simple-overview.svg)
+
+### Complete System Architecture  
+![Architecture](https://raw.githubusercontent.com/Prosperity-labs/construction-industry-agents/main/diagrams/complete-architecture.svg)
+
+### Agent Data Flow
+![Data Flow](https://raw.githubusercontent.com/Prosperity-labs/construction-industry-agents/main/diagrams/agent-workflow.svg)
+
+### Industry Context
+![Industry Workflow](https://raw.githubusercontent.com/Prosperity-labs/construction-industry-agents/main/diagrams/construction-workflow.svg)
 
 ## Current Status
 
@@ -96,7 +98,7 @@ This project is currently under evaluation for commercial deployment.
 - **Commercial License** - For production deployment
 - **Evaluation License** - Current status (see [LICENSE](LICENSE) file)
 
-## 📞 Contact
+## Contact
 
 For questions, collaboration, or licensing inquiries:
 
