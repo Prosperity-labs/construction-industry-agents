@@ -96,7 +96,7 @@ This project is currently under evaluation for commercial deployment.
 **License options:**
 - **MIT License** - If project becomes open source
 - **Commercial License** - For production deployment
-- **Evaluation License** - Current status (see [LICENSE](LICENSE) file)
+- **Evaluation License** - Current status (see [LICENSE](licence.md) file)
 
 ## Contact
 
