@@ -4,7 +4,7 @@
 
 Transform Excel construction specifications into professional quotes in 30 minutes instead of 2-5 days.
 
-![System Overview](https://raw.githubusercontent.com/Prosperity-labs/diagrams/construction-industry-agents/main/docs/diagrams/simple-overview.svg)
+![System Overview](https://raw.githubusercontent.com/Prosperity-labs/construction-industry-agents/main/diagrams/simple-overview.svg)
 
 ## Value Proposition
 
@@ -19,7 +19,7 @@ Transform Excel construction specifications into professional quotes in 30 minut
 
 ```bash
 # Clone repository
-git clone https://github.com/your-org/construction-industry-agents.git
+git clone https://github.com/Prosperity-labs/construction-industry-agents.git
 cd construction-industry-agents
 
 # Setup environment
