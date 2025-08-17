@@ -1,0 +1,49 @@
+graph LR
+    subgraph "🏗️ REVIT WORKFLOW"
+        R1[🏢 Projektantski biro<br/>kreira 3D model u Revitu]
+        R2[📋 Dodaje custom parametre<br/>• Opis<br/>• Jedinica mere<br/>• Količina<br/>• Specifikacije]
+        R3[📊 Exportuje Schedule<br/>iz Revita u Excel]
+        R1 --> R2
+        R2 --> R3
+    end
+    
+    subgraph "🔄 TRENUTNI NAČIN RADA"
+        C1[👤 Čovek čita Excel iz Revita] --> C2[👤 Čovek traži dobavljače]
+        C2 --> C3[👤 Čovek šalje email-ove]
+        C3 --> C4[⏳ Čeka odgovore 2-3 dana]
+        C4 --> C5[👤 Čovek unosi cene ručno]
+        C5 --> C6[👤 Čovek pravi ponudu]
+        C6 --> C7[📄 Ponuda gotova za 2-5 DANA]
+    end
+    
+    subgraph "🤖 AUTOMATIZOVANI SISTEM"
+        A1[📧 Upload Excel iz Revita] --> A2[🤖 AGENT 1<br/>Čita i analizira]
+        A2 --> A3[🤖 AGENT 2<br/>Pronalazi dobavljače]
+        A3 --> A4[🤖 AGENT 3<br/>Šalje upite svima odjednom]
+        A4 --> A5[🤖 AGENT 4<br/>Sakuplja i poredi cene]
+        A5 --> A6[🤖 AGENT 5<br/>Pravi profesionalnu ponudu]
+        A6 --> A7[📄 Ponuda gotova za 30 MINUTA]
+    end
+    
+    R3 --> C1
+    R3 --> A1
+    
+    style R1 fill:#e3f2fd
+    style R2 fill:#e3f2fd
+    style R3 fill:#e3f2fd
+    
+    style C1 fill:#ffcdd2
+    style C2 fill:#ffcdd2
+    style C3 fill:#ffcdd2
+    style C4 fill:#ffcdd2
+    style C5 fill:#ffcdd2
+    style C6 fill:#ffcdd2
+    style C7 fill:#ef5350,color:#fff
+    
+    style A1 fill:#e8f5e8
+    style A2 fill:#c8e6c9
+    style A3 fill:#c8e6c9
+    style A4 fill:#c8e6c9
+    style A5 fill:#c8e6c9
+    style A6 fill:#c8e6c9
+    style A7 fill:#4caf50,color:#fff

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+tests/output/
+*.xlsx
+*.xls
+!examples/*.xlsx
+
+# API keys and secrets
+.env
+.env.local
+*.key
+
+# Logs
+*.log
+
+# Cursor related
+.specstory/
