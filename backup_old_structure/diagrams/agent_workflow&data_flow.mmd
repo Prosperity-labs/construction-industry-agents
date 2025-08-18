@@ -1,0 +1,65 @@
+sequenceDiagram
+    participant Arch as 🏢 Projektant
+    participant Revit as 🏗️ Revit
+    participant User as 👤 Contractor
+    participant Web as 🌐 Web Interface
+    participant Orch as 🎯 Orchestrator
+    participant A1 as 📊 Excel Parser
+    participant A2 as 🏭 Supplier Mapper
+    participant A3 as 📤 Communicator
+    participant A4 as 📥 Response Parser
+    participant A5 as 🧮 Calculator
+    participant A6 as 📄 Generator
+    participant DB as 💾 Database
+    participant Email as 📧 Email System
+    
+    Note over Arch,Revit: UPSTREAM PROCESS
+    Arch->>Revit: Create 3D model
+    Arch->>Revit: Add custom parameters<br/>• Description<br/>• Unit, Quantity<br/>• Specifications
+    Revit->>Revit: Generate Schedule
+    Revit->>User: Export Excel file
+    
+    Note over User,Email: AUTOMATED QUOTE PROCESS
+    User->>Web: Upload Excel from Revit
+    Web->>Orch: Start processing
+    Orch->>A1: Parse Revit Excel
+    
+    Note over A1: ✅ IMPLEMENTED<br/>Reads Revit schedules<br/>Handles custom parameters<br/>Categorizes items<br/>OpenAI enhanced
+    A1->>DB: Store parsed items
+    A1->>Orch: Items extracted ✅
+    
+    Orch->>A2: Map suppliers
+    Note over A2: 🔧 TO BUILD<br/>Find best suppliers<br/>for each category
+    A2->>DB: Query supplier database
+    A2->>Orch: Suppliers mapped ✅
+    
+    Orch->>A3: Send queries
+    Note over A3: 🔧 TO BUILD<br/>Email + API calls<br/>Parallel processing
+    
+    par Send to multiple suppliers
+        A3->>Email: Email to Supplier 1
+        A3->>Email: Email to Supplier 2
+        A3->>Email: API call to Supplier 3
+    end
+    
+    Note over A3,Email: Wait for responses<br/>15-25 minutes
+    
+    Email-->>A4: Responses received
+    A4->>A4: Parse emails & PDFs
+    Note over A4: 🔧 TO BUILD<br/>OCR processing<br/>Price extraction
+    A4->>DB: Store all prices
+    A4->>Orch: Prices collected ✅
+    
+    Orch->>A5: Calculate quote
+    Note over A5: 🔧 TO BUILD<br/>Best price selection<br/>Margin calculation
+    A5->>DB: Store final calculations
+    A5->>Orch: Quote calculated ✅
+    
+    Orch->>A6: Generate documents
+    Note over A6: 🔧 TO BUILD<br/>PDF generation<br/>Excel export
+    A6->>Web: Return PDF & Excel
+    Web->>User: Download ready! 🎉
+    
+    rect rgb(200, 230, 200)
+        Note over User,DB: TOTAL TIME: 30 MINUTES<br/>SUCCESS RATE: 95%+
+    end

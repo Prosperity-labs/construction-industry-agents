@@ -1,0 +1,46 @@
+EXCEL PARSER AGENT - SUMMARY REPORT
+==================================================
+
+Input file: tests/input/synthethic_test_v3.xlsx
+Parsed items: 6
+
+CATEGORY BREAKDOWN:
+  mehanika: 5 items (83.3%)
+  ostalo: 1 items (16.7%)
+
+FINANCIAL SUMMARY:
+  Total value: 6,063.50 RSD
+  Items with prices: 6/6
+  Average price per item: 1,010.58 RSD
+
+DETAILED ITEMS:
+
+1. Izrada otvora za prolaz cevi split klima uređaja
+   Position: 1 | Quantity: 27.0 kom.
+   Category: mehanika | Supplier: HVAC dobavljač
+   Price: 15.00 RSD/kom.
+
+2. Izrada čeličnih hilzni DN100 za prolaz bakarnih cevi klima uređaja na krov
+   Position: 2 | Quantity: 5.0 kom.
+   Category: mehanika | Supplier: HVAC dobavljač
+   Price: 30.00 RSD/kom.
+
+3. Izolacija bakarnih cevi radijatorskog grejanja (Ø22mm, 19mm debljina)
+   Position: 3 | Quantity: 42.5 m
+   Category: mehanika | Supplier: HVAC dobavljač
+   Price: 8.20 RSD/m
+
+4. Pravougaoni kanal 1000x400mm sa termoizolacijom 30mm
+   Position: 4 | Quantity: 24.0 m
+   Category: mehanika | Supplier: HVAC dobavljač
+   Price: 45.00 RSD/m
+
+5. Balansirajući ventil DN50, mesing, PN16
+   Position: 5 | Quantity: 8.0 kom.
+   Category: ostalo | Supplier: Opšti dobavljač
+   Price: 120.00 RSD/kom.
+
+6. Fan-coil jedinica 6.5 kW, 2-cevni sistem, skrivena montaža
+   Position: 6 | Quantity: 4.0 kom.
+   Category: mehanika | Supplier: HVAC dobavljač
+   Price: 780.00 RSD/kom.

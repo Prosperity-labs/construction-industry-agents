@@ -1,0 +1,75 @@
+EXCEL PARSER AGENT - SUMMARY REPORT
+==================================================
+
+Input file: tests/input/realistic_test_v1.xlsx
+Parsed items: 11
+
+CATEGORY BREAKDOWN:
+  demontaža: 2 items (18.2%)
+  građevina: 3 items (27.3%)
+  infrastruktura: 1 items (9.1%)
+  montaža: 1 items (9.1%)
+  transport: 1 items (9.1%)
+  vodovodne_instalacije: 3 items (27.3%)
+
+FINANCIAL SUMMARY:
+  Total value: 1,011,220.00 RSD
+  Items with prices: 11/11
+  Average price per item: 91,929.09 RSD
+
+DETAILED ITEMS:
+
+1. Postavljanje i polaganje PVC cevi Ø150 mm (tip 600) sa cementnim omotačem 1:3:6 (1") prema crtežu WSS 270 – Tip II, uključujući sve fitinge. Iskop se plaća posebno.
+   Position: 1 | Quantity: 220.0 m
+   Category: vodovodne_instalacije | Supplier: Sanitarne instalacije
+   Price: 1665.00 RSD/m
+
+2. Ručni iskop terena (bez eksplozije) do zadate dubine, odlaganje i nivelacija do udaljenosti max 30 ft.
+   Position: 2 | Quantity: 2.5 m³
+   Category: infrastruktura | Supplier: Infrastrukturni radovi
+   Price: 1185.00 RSD/m³
+
+3. Odvoz šuta sa gradilišta teškim vozilom zapremine 3,5 m³ sa utovarom, vožnja do 20 milja.
+   Position: 3 | Quantity: 2.5 opterećenje
+   Category: transport | Supplier: Transport i logistika
+   Price: 4800.00 RSD/opterećenje
+
+4. Izgradnja šahte od opeke unutrašnjih dimenzija 1'-0" x 1'-0", dubina do 1'-3", sa zidovima 3" Grade 15, malter 1:3, unutrašnja i spoljašnja žbuka 1/2", glatka završnica, preko Grade 20 RCC poklopac od 2", ojačan čeličnim šipkama (6 mm) na 4" razmaka; uključuje iskop, oplatu, podizanje šipki i beton Grade 20 prema crtežu WSS/10/01.
+   Position: 4 | Quantity: 12.0 kom.
+   Category: građevina | Supplier: Građevinski materijali
+   Price: 2195.00 RSD/kom.
+
+5. Rušenje odvoda i odnošenje šuta.
+   Position: 5 | Quantity: 190.0 m
+   Category: demontaža | Supplier: Demolicija i uklanjanje
+   Price: 20.00 RSD/m
+
+6. Izrada oplata za strane temelja sa gumenom daskom debljine 1 inč, uključujući demontažu.
+   Position: 6 | Quantity: 3.0 m²
+   Category: montaža | Supplier: Izvođačke usluge
+   Price: 3725.00 RSD/m²
+
+7. Čišćenje i saniranje cementnog maltera i odnošenje šuta.
+   Position: 7 | Quantity: 30.0 m²
+   Category: demontaža | Supplier: Demolicija i uklanjanje
+   Price: 865.00 RSD/m²
+
+8. Beton 1:2:4 (¾") mešan u mikseru sa vibratorom za putni zastor.
+   Position: 8 | Quantity: 7.5 m³
+   Category: građevina | Supplier: Građevinski materijali
+   Price: 39075.00 RSD/m³
+
+9. Betonski odvodni kanali, unutrašnji prečnik 9", dužina promenjiva 6"-9", sa 3" i 1:3 (6" i 1") malterisanje, uključujući samo malter, bez oplata.
+   Position: 9 | Quantity: 63.0 m
+   Category: vodovodne_instalacije | Supplier: Sanitarne instalacije
+   Price: 535.00 RSD/m
+
+10. Konstrukcija betonskog odvoda širine 300 mm, dubine do 400 mm, uključuje iskop u čvrstom tlu, beton Grade 20, završni sloj sa blagim padom, poklopac 75 mm debljine ojačan čeličnim šipkama (10 mm, 150 mm razmak), ukljembljenje i malterisanje.
+   Position: 10 | Quantity: 38.0 m
+   Category: vodovodne_instalacije | Supplier: Sanitarne instalacije
+   Price: 1840.00 RSD/m
+
+11. Konstrukcija odvoda širine 450 mm, dubine do 750 mm, iskop u čvrstom tlu, beton Grade 20, završni sloj, poklopac kao i gore.
+   Position: 11 | Quantity: 51.0 m
+   Category: građevina | Supplier: Građevinski materijali
+   Price: 3255.00 RSD/m

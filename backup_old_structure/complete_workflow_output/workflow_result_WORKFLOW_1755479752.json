@@ -1,0 +1,44 @@
+{
+  "workflow_id": "WORKFLOW_1755479752",
+  "input_file": "tests/input/realistic_test_v1.xlsx",
+  "output_folder": "complete_workflow_output",
+  "success": true,
+  "total_duration": 2.0396807193756104,
+  "steps": {
+    "excel_parsing": {
+      "duration": 0.009157657623291016,
+      "items_parsed": 11
+    },
+    "supplier_mapping": {
+      "duration": 7.05718994140625e-05,
+      "mappings_created": 11
+    },
+    "communication": {
+      "duration": 2.000880718231201,
+      "requests_sent": 2
+    },
+    "response_parsing": {
+      "duration": 4.363059997558594e-05,
+      "responses_parsed": 3
+    },
+    "quote_calculation": {
+      "duration": 0.0019218921661376953,
+      "quote_total": 478404.225
+    },
+    "document_generation": {
+      "duration": 0.027080535888671875,
+      "files_generated": 3
+    }
+  },
+  "final_quote": {
+    "quote_id": "QUOTE_WORKFLOW_1755479752",
+    "total_items": 2,
+    "final_total": 478404.225,
+    "suppliers_count": 1
+  },
+  "generated_files": [
+    "complete_workflow_output/QUOTE_WORKFLOW_1755479752_standard_quote.xlsx",
+    "complete_workflow_output/QUOTE_WORKFLOW_1755479752_detailed_quote.xlsx",
+    "complete_workflow_output/QUOTE_WORKFLOW_1755479752_supplier_comparison.xlsx"
+  ]
+}

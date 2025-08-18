@@ -1,0 +1,124 @@
+graph TB
+    subgraph "UPSTREAM WORKFLOW"
+        REVIT[🏢 Revit 3D Model<br/>Architectural design]
+        PARAMS[📋 Custom Parameters<br/>• Description<br/>• Unit of measure<br/>• Quantity<br/>• Specifications<br/>• Materials]
+        SCHEDULE[📊 Revit Schedule<br/>Export to Excel]
+        REVIT --> PARAMS
+        PARAMS --> SCHEDULE
+    end
+    
+    subgraph "PRESENTATION LAYER"
+        WEB[🌐 Web Interface<br/>Streamlit/React]
+        API[🔌 REST API<br/>FastAPI]
+        DASH[📊 Analytics Dashboard<br/>Real-time monitoring]
+    end
+    
+    subgraph "ORCHESTRATION LAYER"
+        ORCH[🎯 Main Orchestrator<br/>Workflow management]
+        QUEUE[⚡ Task Queue<br/>Celery + Redis]
+        SCHED[⏰ Scheduler<br/>Cron jobs & triggers]
+    end
+    
+    subgraph "AGENT LAYER - CORE PROCESSING"
+        A1[📊 Excel Parser Agent<br/>✅ READY<br/>• Multi-format support<br/>• Serbian language<br/>• Auto-categorization<br/>• OpenAI enhanced]
+        
+        A2[🏭 Supplier Mapping Agent<br/>🔧 TO BUILD<br/>• Supplier database<br/>• Smart matching<br/>• Performance ranking]
+        
+        A3[📤 Communication Agent<br/>🔧 TO BUILD<br/>• Multi-channel sending<br/>• Template engine<br/>• Response tracking]
+        
+        A4[📥 Response Parser Agent<br/>🔧 TO BUILD<br/>• Email parsing<br/>• PDF extraction<br/>• Price validation]
+        
+        A5[🧮 Quote Calculator Agent<br/>🔧 TO BUILD<br/>• Price optimization<br/>• Margin calculation<br/>• Timeline planning]
+        
+        A6[📄 Document Generator<br/>🔧 TO BUILD<br/>• PDF generation<br/>• Excel exports<br/>• Professional formatting]
+    end
+    
+    subgraph "INTELLIGENCE LAYER"
+        ML1[🧠 Category Classifier<br/>NLP + Keywords]
+        ML2[📈 Price Predictor<br/>Historical analysis]
+        ML3[⚠️ Anomaly Detector<br/>Price validation]
+        ML4[🎯 Supplier Ranker<br/>Performance ML]
+    end
+    
+    subgraph "INTEGRATION LAYER"
+        INT1[📧 Email Service<br/>SMTP/IMAP<br/>Gmail/Outlook APIs]
+        INT2[🔗 Supplier APIs<br/>REST integrations<br/>Authentication]
+        INT3[🕷️ Web Scraping<br/>Selenium/Scrapy<br/>Anti-detection]
+        INT4[🔍 OCR Service<br/>Tesseract<br/>Cloud Vision API]
+    end
+    
+    subgraph "DATA LAYER"
+        DB1[(📦 Main Database<br/>PostgreSQL<br/>Projects, Items, Quotes)]
+        DB2[(⚡ Cache<br/>Redis<br/>Session data, Temp results)]
+        DB3[📁 File Storage<br/>MinIO/S3<br/>Excel files, PDFs, Images]
+        DB4[(👥 Supplier DB<br/>Contact info<br/>Performance metrics)]
+        DB5[(💰 Price History<br/>Time-series data<br/>Market trends)]
+    end
+    
+    subgraph "MONITORING & SECURITY"
+        MON1[📋 Logging<br/>Structured logs<br/>Error tracking]
+        MON2[📊 Metrics<br/>Processing times<br/>Success rates]
+        MON3[🚨 Alerts<br/>Failed requests<br/>System errors]
+        SEC1[🔒 Authentication<br/>JWT tokens<br/>Role-based access]
+        SEC2[🛡️ Rate Limiting<br/>API protection<br/>DDoS prevention]
+    end
+    
+    %% Upstream flow
+    SCHEDULE --> WEB
+    SCHEDULE --> A1
+    
+    %% Flow connections
+    WEB --> API
+    API --> ORCH
+    ORCH --> QUEUE
+    
+    QUEUE --> A1
+    A1 --> A2
+    A2 --> A3
+    A3 --> A4
+    A4 --> A5
+    A5 --> A6
+    
+    %% Intelligence connections
+    A1 --> ML1
+    A2 --> ML4
+    A4 --> ML2
+    A4 --> ML3
+    A5 --> ML2
+    
+    %% Integration connections
+    A3 --> INT1
+    A3 --> INT2
+    A3 --> INT3
+    A4 --> INT4
+    
+    %% Data connections
+    A1 --> DB1
+    A1 --> DB3
+    A2 --> DB4
+    A3 --> DB2
+    A4 --> DB5
+    A5 --> DB1
+    A6 --> DB3
+    
+    %% Monitoring connections
+    ORCH --> MON1
+    A1 --> MON2
+    A3 --> MON2
+    A4 --> MON2
+    MON1 --> MON3
+    
+    %% Security
+    API --> SEC1
+    API --> SEC2
+    
+    %% Styling
+    style A1 fill:#c8e6c9,stroke:#4caf50,stroke-width:3px
+    style A2 fill:#ffcdd2,stroke:#f44336,stroke-width:2px
+    style A3 fill:#ffcdd2,stroke:#f44336,stroke-width:2px
+    style A4 fill:#ffcdd2,stroke:#f44336,stroke-width:2px
+    style A5 fill:#ffcdd2,stroke:#f44336,stroke-width:2px
+    style A6 fill:#ffcdd2,stroke:#f44336,stroke-width:2px
+    
+    style ORCH fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style QUEUE fill:#e8f5e8,stroke:#4caf50,stroke-width:2px

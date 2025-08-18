@@ -1,0 +1,44 @@
+{
+  "workflow_id": "WORKFLOW_1755480186",
+  "input_file": "test_construction_spec.xlsx",
+  "output_folder": "complete_workflow_output",
+  "success": true,
+  "total_duration": 3.0324831008911133,
+  "steps": {
+    "excel_parsing": {
+      "duration": 0.009028196334838867,
+      "items_parsed": 6
+    },
+    "supplier_mapping": {
+      "duration": 7.295608520507812e-05,
+      "mappings_created": 6
+    },
+    "communication": {
+      "duration": 3.000943899154663,
+      "requests_sent": 3
+    },
+    "response_parsing": {
+      "duration": 5.817413330078125e-05,
+      "responses_parsed": 3
+    },
+    "quote_calculation": {
+      "duration": 0.000751495361328125,
+      "quote_total": 707.2920000000001
+    },
+    "document_generation": {
+      "duration": 0.021097421646118164,
+      "files_generated": 3
+    }
+  },
+  "final_quote": {
+    "quote_id": "QUOTE_WORKFLOW_1755480186",
+    "total_items": 2,
+    "final_total": 707.2920000000001,
+    "suppliers_count": 1
+  },
+  "generated_files": [
+    "complete_workflow_output/QUOTE_WORKFLOW_1755480186_standard_quote.xlsx",
+    "complete_workflow_output/QUOTE_WORKFLOW_1755480186_detailed_quote.xlsx",
+    "complete_workflow_output/QUOTE_WORKFLOW_1755480186_supplier_comparison.xlsx"
+  ]
+}
